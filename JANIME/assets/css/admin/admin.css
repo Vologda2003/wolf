@@ -1,0 +1,345 @@
+.editing-btn{
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.editing-btn form{
+    display: flex;
+}
+
+.update-btn{   
+    background: url(../../image/editing.jpg) no-repeat center;
+    background-size: 38px 38px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.delete-btn{
+    background: url(../../image/delete.png) no-repeat center;
+    background-size: 38px 38px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;   
+}
+
+.admin{
+    font-size: 45px;
+    width: 150px;
+    height: 65px;
+    padding: 5px 0 0 0;
+    margin: auto;
+    color: white;
+}
+
+.link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-add{
+    font-family: 'Times New Roman', Times, serif;
+    width: auto;
+    font-size: 25px;
+    background-color: rgb(46, 38, 38, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: white;
+    margin: 0 10px;
+}
+
+.save{
+    font-family: 'Times New Roman', Times, serif;
+    width: 10%;
+    margin: auto;
+    font-size: 25px;
+    background-color: rgba(61, 61, 61, 0.883);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: white;
+}
+
+.btn-add:hover, .save:hover{
+    text-shadow: none;
+    box-shadow: 1px 0 12px rgb(255, 255, 255), 
+    0 1px 12px rgb(255, 255, 255), 
+    -1px 0 12px rgb(255, 255, 255), 
+    0 -1px 12px rgb(255, 255, 255);
+}
+
+.page{
+    align-items: center;
+}
+
+.content{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 100px 0 0 0;
+    text-align: left;
+    width: 950px;
+    height: auto;
+    color: white;
+}
+
+.content-editing{
+    background-color: rgb(46, 38, 38, 0.7);
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+input::-webkit-file-upload-button {
+    display: none;
+}
+
+.info-icon {
+    user-select: none;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    text-shadow: 1px 1px 2px black, 
+    -1px 1px 2px black, 
+    1px -1px 2px black, 
+    -1px -1px 2px black;
+    overflow: hidden;
+}
+
+.info-icon:hover {
+    filter: brightness(80%);
+}
+
+.info-icon-image {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.info-head{
+    width: 425px;
+}
+
+.info-head li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    line-height: 35px;
+    margin: 10px;
+}
+
+.info-description{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-description-text{
+    width: 700px;
+    height: 280px;
+}
+
+
+/* ГАЛЕРЕЯ */
+
+
+.info-gallery-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(46, 38, 38, 0.7);
+    margin: 20px 0;
+}
+
+.info-gallery{
+    user-select: none;
+    width: 170px;
+    height: 60px;
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    text-shadow: 1px 1px 2px black, 
+    -1px 1px 2px black, 
+    1px -1px 2px black, 
+    -1px -1px 2px black;
+    overflow: hidden;
+}
+
+.info-gallery-image{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.gallery-images-section{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.gallery-images-image{
+    height: 140px;
+    width: auto; 
+    margin: 5px;
+}
+
+
+/* Видео */
+
+
+.info-video-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.info-video-icon{
+    user-select: none;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 3em;
+    font-weight: bold;
+    position: relative;
+    text-shadow: 1px 1px 2px black, 
+    -1px 1px 2px black, 
+    1px -1px 2px black, 
+    -1px -1px 2px black;
+    overflow: hidden;
+}
+
+.video-icon-image{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.video-btn{
+    user-select: none;
+    width: 120px;
+    height: 50px;
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    text-shadow: 1px 1px 2px black, 
+    -1px 1px 2px black, 
+    1px -1px 2px black, 
+    -1px -1px 2px black;
+    overflow: hidden;
+}
+
+.video{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.video-video{
+    width: 600px;
+    height: 335px;
+}
+
+/* Для  4k*/
+
+@media screen and (min-width: 2560px){
+    .info-head{
+        width: 425px;
+    }
+
+    .info-icon {
+        width: 250px;
+        height: 380px;
+    }
+
+    .info-description-text{
+        width: 1500px;
+        height: 280px;
+    }
+    
+    .gallery-images-image{
+        height: 280px;
+    }
+}
+
+/* Для телефонов */
+
+@media screen and (max-width: 500px){
+    .editing-btn form{
+        flex-direction: column;
+    }
+
+    .admin{
+        display: none;
+    }
+}
+
+/* Для планшетов */
+
+@media screen and (min-width: 501px) and (max-width: 850px){
+    .admin{
+        display: none;
+    }
+}

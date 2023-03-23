@@ -1,0 +1,65 @@
+.body_slides{
+    list-style:none;
+    margin:0;
+    padding:0;
+    z-index:-2; 
+    background:#000;}
+.body_slides,
+.body_slides:after{
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;}
+ 
+.body_slides li{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    left:0%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    opacity:0;
+    -webkit-animation: anim_slides 30s linear infinite 0s;
+    -moz-animation: anim_slides 30s linear infinite 0s;
+    -o-animation: anim_slides 30s linear infinite 0s;
+    -ms-animation: anim_slides 30s linear infinite 0s;
+    animation: anim_slides 30s linear infinite 0s;
+}
+.body_slides li:nth-child(1){
+background-image: url(../image/1-1.jpg);
+}
+.body_slides li:nth-child(2){
+-webkit-animation-delay: 10.0s;
+-moz-animation-delay: 10.0s;
+background-image: url(../image/2-1.jpg);
+} 
+.body_slides li:nth-child(3){
+-webkit-animation-delay: 20.0s;
+-moz-animation-delay: 20.0s;
+background-image: url(../image/3-1.jpg);
+}
+
+@-webkit-keyframes anim_slides {
+0% {opacity:0;}
+2% {opacity:1;}
+33% {opacity:1;}
+34% {opacity:0;}
+100% {opacity:0;}
+}
+@-moz-keyframes anim_slides {
+0% {opacity:0;}
+2% {opacity:1;}
+33% {opacity:1;}
+34% {opacity:0;}
+100% {opacity:0;}
+}
+
+/* МЕДИА-ЗАПРОСЫ */
+
+@media screen and (max-width: 1000px) {
+    .body_slides li:nth-child(1){ background-image: url(../image/1.jpg); }
+    .body_slides li:nth-child(2){ background-image: url(../image/2.jpg); }
+    .body_slides li:nth-child(3){ background-image: url(../image/3.jpg); }
+}
